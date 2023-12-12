@@ -1,0 +1,172 @@
+body {font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;}
+
+header {background-color: #333; 
+        color: #fff;
+        padding-top: 1px;
+        padding-bottom: 0.1px;
+        text-align: center;}
+
+header #logo{width: 45px;
+            height: 40px;}
+
+
+
+header #titu{font-size: 50px;
+            font-weight: bold;}
+
+header nav #padre{display: flex;  
+                  justify-content:space-between;}
+
+/*CAJA CON EL USUARIO Y FOTO DE USUARIO*/
+header nav #user{display: flex;
+                  width: 33%;
+                  justify-content: left;
+                  margin-left: 10px;
+                  align-items: center;
+                  margin-bottom: 5px;}
+
+header nav .fotoUsuario{width: 60px;
+                          height: 60px;
+                          border-radius: 100%;
+                          object-fit: cover;
+                          object-position: center center;}
+              
+header nav .emailUsuario{padding-left: 10px;}
+
+/*FIN CAJA CON EL USUARIO Y FOTO DE USUARIO*/
+
+/*CAJA CON EL MENÚ*/
+header nav #menu {width: 33%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 text-align: center;}
+
+nav ul {list-style: none;}
+              
+nav ul li {display: inline;
+            margin-right: 20px;}
+              
+nav a {text-decoration: none;
+        color: #fff;}
+              
+nav a:hover {font-size: 16.5px;
+              color: white;}
+
+/*CAJA CON EL MENÚ*/
+
+/*ESTILOS BUSCADOR*/
+header nav #buscador{margin-right: 10px;
+                      display: flex;
+                      justify-content: right;
+                      align-items: center;
+                      width: 33%;}
+
+  /* Estilos para el contenedor del formulario de búsqueda */
+.search-container {text-align: center;
+                    margin-top: 50px;}
+      
+  /* Estilos para el campo de entrada de búsqueda */
+.search-input {padding: 5px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 250px;
+                margin-right: 10px;}
+      
+  /* Estilos para el botón de búsqueda */
+.search-button {padding: 5px 20px;
+                font-size: 16px;
+                background-color: #4caf50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;}
+      
+  /* Estilos para resaltar el botón al pasar el ratón sobre él */
+.search-button:hover {background-color: #45a049;}
+
+/*FIN DE ESTILOS BUSCADOR*/
+
+
+/* BOTON SUBIR PRODUCTOS*/
+  /* Estilo base del botón */
+.upload-btn {display: inline-block;
+              padding: 10px 10px;
+              font-size: 16px;
+              text-align: center;
+              text-decoration: none;
+              cursor: pointer;
+              border: 2px solid #3498db;
+              color: #3498db;
+              background-color: #fff;
+              border-radius: 5px;
+              transition: background-color 0.3s, color 0.3s;
+              margin-top: 10px;
+              margin-left: 10px;
+              width: fit-content;}
+
+  /* Estilo cuando el mouse está sobre el botón */
+.upload-btn:hover {background-color: #3498db;
+                    color: #fff;}
+
+  /* Estilo cuando el botón está activo o presionado */
+.upload-btn:active {background-color: #2980b9;
+                      border-color: #2980b9;
+                      color: #fff;}
+
+/*FIN BOTON SUBIR PRODUCTOS*/
+
+/*PRODUCTOS/ANUNCIOS*/
+#productos .producto:hover{border: 1px solid black;}
+
+#productos {display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 99%;}
+
+#productos a{text-decoration: none;}
+
+.producto {border: 1px solid #ddd;
+            padding: 10px;
+            padding-bottom: 1px;
+            margin: 10px;
+            max-width: 300px;}
+
+.producto h2{font-size: 25px;
+              margin-left: 4px;
+              color: black;}
+
+.precio {margin-left: 4px;
+          margin-top: 2px;
+          font-weight: bold;
+          font-size: 25px;
+          color: green;}
+
+#productos #fotAnun{width: 300px;
+              height: 250px;
+              object-fit: cover;
+              object-position: center center;}
+
+/*FIN PRODUCTOS/ANUNCIOS*/
+
+
+footer #logo{width: 13px;
+              height: 13px;}
+  
+footer {background-color: black;
+          color: white;
+          text-align: center;
+          align-content: center;
+          bottom: 0;
+          padding-bottom: 1px;
+          padding-top: 1px;
+          width: 100%;
+          bottom: 0px;
+          position: fixed;}
+
