@@ -10,7 +10,7 @@ require_once 'modelos/fotosDAO.php';
 require_once 'modelos/fotos.php';
 
 //Creamos la conexión utilizando la clase que hemos creado
-$connexionDB = new ConnexionDB mysqli($host,$user,$password,$database);
+$connexionDB = new ConnexionDB(MYSQL_USER,MYSQL_PASS,MYSQL_HOST,MYSQL_DB);
 $conn = $connexionDB->getConnexion();
 
 $AnunciosDAO= new AnunciosDAO($conn);
