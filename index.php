@@ -10,7 +10,7 @@ require_once 'modelos/fotosDAO.php';
 require_once 'modelos/fotos.php';
 
 //Creamos la conexión utilizando la clase que hemos creado
-$connexionDB = new ConnexionDB('root','','localhost','Wapallop');
+$connexionDB = new ConnexionDB mysqli($host,$user,$password,$database);
 $conn = $connexionDB->getConnexion();
 
 $AnunciosDAO= new AnunciosDAO($conn);
